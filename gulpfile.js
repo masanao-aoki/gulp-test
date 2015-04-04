@@ -2,7 +2,7 @@ var gulp=require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('autoprefixer', function () {
-    return gulp.src('css/*.css')
+    return gulp.src('css/pre_css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 10 versions','ie > 9'],
             cascade: false
@@ -12,5 +12,5 @@ gulp.task('autoprefixer', function () {
 
 //watch
 gulp.task('watch', ['autoprefixer'], function(){
-	gulp.watch('css/*.css', ['autoprefixer']);
+	gulp.watch('css/pre_css/*.css', ['autoprefixer']);
 });
