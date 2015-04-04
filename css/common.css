@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* common */
+
+header#header ,
+nav#globalnav ,
+main[role="main"] ,
+footer#footer {
+	min-width: 320px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	color: #39c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ddd;
+	text-decoration: underline;
+}
+
+#one div.oya { 
+	background-color: #000;
+	margin: 40px;
+	overflow: hidden;
+	height: 200px;
+	width: 300px;
+	position: relative;
+}
+
+#one div.oya p {
+	margin: 20px;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#one div.oya2 {
+	background-color: #ccc;
+	overflow: hidden;
+}
+
+#one div.oya2 p {
+	
+	display: inline-block;
+}
+
+
+/* header */
+
+header#header {
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	clear: both;
+}
+
+header#header h1 {
+	text-align: center;
+	margin: 20px auto;
+	font-size: 150%;
+}
+
+/* nuv */
+
+nav#globalnav {
+	margin-bottom: 20px;
+	background-color: #ddd;
+}
+
+nav#globalnav ul {
+	padding: 0 10px;
+}
+
+nav#globalnav ul li {
+	display: inline-block;
+}
+
+nav#globalnav ul li a {
+	padding: 12px 10px 8px;
+	display: block;
+	text-transform: uppercase;
+}
+
+nav#globalnav ul li a:hover {
+	color: #fff;
+}
+
+/* main */
+
+main[role="main"] section header {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+main[role="main"] section header h1 {
+	font-size: 125%;
+	padding: 12px 0 10px;
+	text-transform: uppercase;
+}
+
+main[role="main"] section dl {
+	overflow: hidden;
+}
+
+main[role="main"] section dl dt ,
+main[role="main"] section dl dd {
+	float: left;
+	padding-bottom: 16px;
+}
+
+main[role="main"] section dl dt {
+	clear: both;
+	width: 50%;
+	text-transform: uppercase;
+}
+
+main[role="main"] section dl dd {
+	width: 50%;
+}
+
+main[role="main"] section dl dd ul ,
+main[role="main"] section ul {
+	list-style-position: inside;
+}
+
+/* web service */
+
+main[role="main"] section#webservice {
+	overflow: hidden;
+}
+
+main[role="main"] section#webservice section {
+	float: left;
+	width: 500px;
+}
+
+main[role="main"] section#webservice section h2 {
+	margin-bottom: 20px;
+}
+
+main[role="main"] section#webservice section ul li {
+	line-height: 180%;
+}
+
+/* footer */
+footer#footer {
+	text-align: center;
+	margin: 40px auto 20px;
+	padding: 20px 0 18px;
+	background-color: #ddd;
+}
