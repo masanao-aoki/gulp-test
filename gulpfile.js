@@ -1,5 +1,6 @@
 var gulp=require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
+var csscomb = require('gulp-csscomb');
 
 gulp.task('autoprefixer', function () {
     return gulp.src('css/pre_css/*.css')
@@ -7,6 +8,7 @@ gulp.task('autoprefixer', function () {
             browsers: ['last 10 versions','ie > 9'],
             cascade: false
         }))
+        .pipe(csscomb())
         .pipe(gulp.dest('css/'));
 });
 

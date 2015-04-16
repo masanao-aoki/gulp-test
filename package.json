@@ -19,6 +19,7 @@
   "devDependencies": {
     "gulp": "",
     "gulp-watch": "",
-    "gulp-autoprefixer": "^2.1.0"
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-csscomb": ""
   }
 }

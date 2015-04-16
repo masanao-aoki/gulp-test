@@ -9,6 +9,7 @@ footer#footer {
 	min-width: 320px;
 	max-width: 960px;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 a {
@@ -21,7 +22,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-#one div.oya { 
+#one div.oya {
 	background-color: #000;
 	margin: 40px;
 	overflow: hidden;
@@ -44,7 +45,7 @@ a:hover {
 }
 
 #one div.oya2 p {
-	
+
 	display: inline-block;
 }
 
